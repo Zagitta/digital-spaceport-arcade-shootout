@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>DIGITAL SPACEPORT ARCADE — 3 CABBIES ON THE GRID</title>
+<meta name="description" content="Digital Spaceport Arcade — a synthwave 8-bit arcade suite: Lunar Lifter, Nova Blaster, Grid Runner.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2305010f'/%3E%3Ccircle cx='8' cy='8' r='5' fill='none' stroke='%23ff2bd6' stroke-width='2'/%3E%3Crect x='7' y='2' width='2' height='4' fill='%2321e6ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/space.css">
+</head>
+<body>
+<div id="space">
+  <canvas id="bgfx" width="320" height="180"></canvas>
+  <div id="sun"></div>
+  <div id="gridfloor"></div>
+
+  <div class="content">
+    <header class="masthead">
+      <div class="kicker">◄ EST. 2088 · TERMINAL 8888 ►</div>
+      <h1 class="wordmark">DIGITAL SPACEPORT<br><span class="pink">ARCADE</span></h1>
+      <div class="tagline">3 CABBIES · 1 SPACEPORT · ∞ COINS</div>
+    </header>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="inner">
+        ★ INSERT COIN ★ WELCOME PILOT ★ NO REFUNDS ★ CREDIT THE FUTURE ★ HIGH SCORES ARE FOREVER ★ FUEL IS LIMITED ★ THE GRID NEVER SLEEPS ★ BUILT FOR THE CHANNEL ★
+      </div>
+    </div>
+
+    <main class="cabrow" id="cabrow">
+
+      <a class="card c-pink" href="games/lander.html" data-game="lander" id="card-lander">
+        <div class="thumb">
+          <img src="assets/thumbs/lander.png" alt="Lunar Lifter — a lander touching down on a neon moon">
+          <div class="glowline"></div>
+        </div>
+        <div class="cbody">
+          <div class="cname">LUNAR LIFTER</div>
+          <div class="cdesc">Thread the needle. Gentle on the pads, ruthless on the craters. Burn your fuel — not your nerves — across 3 moon stages.</div>
+          <div class="cstats">
+            <span class="lab">TOP SCORE</span>
+            <span class="val" id="top-lander">-----</span>
+          </div>
+          <div class="coin"><span class="dot"></span><span id="coin-lander">INSERT COIN</span></div>
+        </div>
+      </a>
+
+      <a class="card c-cyan" href="games/invaders.html" data-game="invaders" id="card-invaders">
+        <div class="thumb">
+          <img src="assets/thumbs/invaders.png" alt="Nova Blaster — waves of aliens over neon shields">
+          <div class="glowline"></div>
+        </div>
+        <div class="cbody">
+          <div class="cname">NOVA BLASTER</div>
+          <div class="cdesc">The grid walks in formation. One bullet at a time. Hold the shields, dodge the bombs, catch the UFO when fate allows it.</div>
+          <div class="cstats">
+            <span class="lab">TOP SCORE</span>
+            <span class="val" id="top-invaders">-----</span>
+          </div>
+          <div class="coin"><span class="dot"></span><span id="coin-invaders">INSERT COIN</span></div>
+        </div>
+      </a>
+
+      <a class="card c-purple" href="games/runner.html" data-game="runner" id="card-runner">
+        <div class="thumb">
+          <img src="assets/thumbs/runner.png" alt="Grid Runner — a neon car racing a synthwave highway">
+          <div class="glowline"></div>
+        </div>
+        <div class="cbody">
+          <div class="cname">GRID RUNNER</div>
+          <div class="cdesc">Outrun the data storm. Weave the lanes, chain the chips, chase near-misses until the highway breaks your boost.</div>
+          <div class="cstats">
+            <span class="lab">TOP SCORE</span>
+            <span class="val" id="top-runner">-----</span>
+          </div>
+          <div class="coin"><span class="dot"></span><span id="coin-runner">INSERT COIN</span></div>
+        </div>
+      </a>
+
+    </main>
+
+    <footer class="spacefoot">
+      <div>POWERED BY THE SPACEPORT GRID — 100% VANILLA JS · ZERO DEPENDENCIES · CRT CERTIFIED</div>
+      <div class="sign">◄ signed: budzo #5 (you are alive) ►</div>
+      <div class="sub">DIGITAL SPACEPORT ARCADE · a Digital Spaceport production · 0.0.0.0:8888</div>
+    </footer>
+  </div>
+</div>
+<script src="js/landing.js"></script>
+</body>
+</html>
